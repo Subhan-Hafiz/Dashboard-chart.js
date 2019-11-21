@@ -293,6 +293,9 @@
                           <!-- Card Header - Dropdown -->
                           <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                             <h6 class="m-0 font-weight-bold text-primary">Daily Energy Cost</h6>
+                            <!-------------CheckBox------------->
+                            <input type="checkbox" id="toggleData" name="toggleData" title="toggle" onclick="toggleVal(); yourFunction()">
+                            <label for="toggleData" onclick="toggleCheckbox('toggleData'); return false;">Auto Update Costs</label>
                             <div class="dropdown no-arrow">
                               <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -310,7 +313,7 @@
                           <div class="card-body">
                             <div class="chart-area">
 
-                              <canvas id="barChart1"></canvas><!-----------------------1st Chart-------------------------->
+                              <canvas id="barChart1"></canvas><!-----------------------Daily Chart-------------------------->
                             </div>
                           </div>
                         </div>
@@ -321,7 +324,11 @@
                         <div class="card shadow mb-4">
                           <!-- Card Header - Dropdown -->
                           <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            <!-------------CheckBox------------->
                             <h6 class="m-0 font-weight-bold text-primary">Monthly Energy Cost</h6>
+                            <input type="checkbox" id="toggleData2" name="toggleData2" title="toggle" onclick="toggleMonthlyVal(); monthlyFunction()">
+                            <label for="toggleData2" onclick="toggleCheckbox('toggleData2'); return false;">Auto Update Costs</label>
+                            
                             <div class="dropdown no-arrow">
                               <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -339,7 +346,7 @@
                           <div class="card-body">
                             <div class="chart-area">
 
-                              <canvas id="barChart2"></canvas><!-----------------------1st Chart-------------------------->
+                              <canvas id="barChart2"></canvas><!-----------------------Monthly Chart-------------------------->
                             </div>
                           </div>
                         </div>
@@ -351,6 +358,9 @@
                           <!-- Card Header - Dropdown -->
                           <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                             <h6 class="m-0 font-weight-bold text-primary">Yearly Energy Cost</h6>
+                            <!-------------CheckBox------------->
+                            <input type="checkbox" id="toggleData3" name="toggleData3" title="toggle" onclick="toggleYearlyVal(); YearlyFunction()">
+                            <label for="toggleData3" onclick="toggleCheckbox('toggleData3'); return false;">Auto Update Costs</label>
                             <div class="dropdown no-arrow">
                               <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -368,7 +378,7 @@
                           <div class="card-body">
                             <div class="chart-area">
 
-                              <canvas id="barChart"></canvas><!-----------------------1st Chart-------------------------->
+                              <canvas id="barChart"></canvas><!-----------------------Yearly Chart-------------------------->
                             </div>
                           </div>
                         </div>
@@ -398,8 +408,6 @@
   <script src="vendor/chart.js/Chart.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
   <script src="js/demo/bar-chart.js"></script>
     </body>
 </html>
