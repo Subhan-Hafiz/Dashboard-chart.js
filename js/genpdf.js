@@ -10,7 +10,7 @@ $('#downloadPdf').click(function(event) {
     
       //creates PDF from img
       var doc = new jsPDF('landscape');
-      doc.setFontSize(20);
+      doc.setFontSize(10);
       doc.text(200, 25, "Energy Consumption Trend");
       doc.text(200, 125, "Energy Consumption Units");
       doc.addImage(canvasImg, 'JPEG', 10, 10, 140, 75 );
